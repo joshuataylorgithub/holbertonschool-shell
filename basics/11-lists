@@ -1,2 +1,8 @@
 #!/bin/bash
-ls -al * 
+# list all files including hidden files in current directory, parent of current working directory, and /boot files
+ls -al
+cd ..
+ls -al
+cd - 
+ls -al /boot
+
