@@ -1,2 +1,2 @@
 #!/bin/bash
-find hello -user $(guilliame) -exec chown vincent [] +
+sudo chown --from=guilliame vincent hello>
