@@ -1,2 +1,2 @@
 #!/bin/bash
-cp *[65-90] /tmp/u
+cp *[:upper:] /tmp/u
