@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -name '.*' -print | wc -l
+find . -not -path -name "./." -type d | wc -l
