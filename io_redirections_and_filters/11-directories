@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -not -path "./.*" -type d exec ls ld {} + | wc -l
+find . -type d -not -path "./." | wc -l
