@@ -1,2 +1,2 @@
 #!/bin/bash
-grep [[97-122]] [[65-90]] /etc/ssh/sshd_config
+uniq -u [[97-122]] [[65-90]] /etc/ssh/sshd_config
