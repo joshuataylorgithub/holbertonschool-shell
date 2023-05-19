@@ -4,7 +4,6 @@
 #
 
 
-string="Best School"
 
 for ((string=1; string<=10; string++))
 
