@@ -1,0 +1,19 @@
+#!/usr/bin/env/ bash
+# writes a script using a while loop that prints "Best School" 8 times, but after the third time it prints "bad luck" and after the 6th time it prints # "good luck"
+
+iteration=1
+
+while [ $iteration -le 10 ];
+	do
+	if [ $iteration -eq 4 ]; 
+	then
+	   echo "bad luck"
+	elif [ $iteration -eq 8 ]; 
+	then
+	     echo "good luck"
+	else
+	     echo "Best School"
+	fi
+	
+	((iteration++))
+done
