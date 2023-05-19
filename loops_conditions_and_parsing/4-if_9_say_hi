@@ -3,12 +3,11 @@
 
 
 iteration=1
-until [ $iteration -gt 10 ]; do
+while [ $iteration -le 10 ]; do
   if [ $iteration -eq 9 ]; then
 	  echo "Hi"
-	  iteration=$((iteration + 1))
-	  continue
-  fi
+  else
 	  echo "Best School"
+  fi
   iteration=$((iteration + 1))
 done
