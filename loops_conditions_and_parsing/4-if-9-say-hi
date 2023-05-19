@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# write a script using an "until" loop that displays "Best School" 10 times.
+
+
+iteration=1
+until [ $iteration -gt 10 ]; do
+  if [ $iteration -eq 9 ]; then
+	  echo "Hi"
+	  iteration=$((iteration + 1))
+	  continue
+  fi
+	  echo "Best School"
+  iteration=$((iteration + 1))
+done
