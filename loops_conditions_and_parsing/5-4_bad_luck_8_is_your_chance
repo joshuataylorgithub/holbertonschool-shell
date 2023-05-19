@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-
-# writes a script using a while loop that prints "Best School" 8 times, 
-# but after the third time it prints "bad luck" and after the 6th time 
-# it prints # "good luck"
+# Write a Bash script that loops from 1 to 10 and:
+#displays bad luck for the 4th loop iteration
+#displays good luck for the 8th loop iteration
+#displays Best School for the other iterations
 
 iteration=1
 
