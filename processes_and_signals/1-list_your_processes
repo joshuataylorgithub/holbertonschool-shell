@@ -6,4 +6,4 @@
 #Show process hierarchy
 
 
-ps -eo --forest
+ps -ef --forest
