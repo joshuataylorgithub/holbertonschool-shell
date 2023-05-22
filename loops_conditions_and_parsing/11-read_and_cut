@@ -4,7 +4,7 @@
 #username
 #user id
 #Home directory path for the user
-
+cat /etc/passwd
 while IFS=':' read -r username _ userid _ homedir _
 do
 	echo "Username: $username"
