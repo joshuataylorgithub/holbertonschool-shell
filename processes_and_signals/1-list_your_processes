@@ -6,4 +6,4 @@
 #Show process hierarchy
 
 
-ps -eo pid,ppid,user,cmd --forest
+ps -eo --forest
