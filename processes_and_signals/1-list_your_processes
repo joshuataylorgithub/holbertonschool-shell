@@ -6,4 +6,4 @@
 #Show process hierarchy
 
 
-pstree -pU 
+ps axu f
