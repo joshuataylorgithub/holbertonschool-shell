@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word bash.
 
-pstree -p | awk '/bash/ {gsub(/[^0-9]/,"",$1); print $1}' | grep --color green *
+pstree -p | awk '/bash/ {gsub(/[^0-9]/,"",$1); print $1}' | grep --color green ./*
