@@ -3,6 +3,9 @@
 
 pid=$(pidof 4-to_infinity_and_beyond)
 
-if [ "$pid" ]; then
+if [ -z "$pid" ]; then
+	echo "Process not running"
+else
 	kill "$pid"
+	echo "Process has been stopped"
 fi
