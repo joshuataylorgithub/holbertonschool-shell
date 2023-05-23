@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 #Write a Bash script that stops 4-to_infinity_and_beyond process.
 
-kill $(pidof 4-to_infinity_and_beyond)
+pid=$(pidof 4-to_infinity_and_beyond)
 
-
+if [ -z "$pid" ]; then
+	echo "Process id $pid not activated"
+else 
+	kill "$pid"
+	echo "Process id $pid terminated"
+fi
