@@ -14,7 +14,7 @@
 	trap "echo 'I hate the kill command'" SIGTERM
 	trap "echo 'Y U no love me?!'" SIGINT
 	if "SIGQUIT || SIGTERM"; then
-		"$(pkill -f /var/run/myscript.pid)"
-		"$(rm /var/run/myscript.pid)"
+		"pkill -f /var/run/myscript.pid"
+		"rm /var/run/myscript.pid"
 	fi
 done
