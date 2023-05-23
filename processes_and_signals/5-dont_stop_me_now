@@ -3,9 +3,6 @@
 
 pid=$(pidof 4-to_infinity_and_beyond)
 
-if [ -z "$pid" ]; then
-	echo "Process id $pid not activated"
-else 
+if [ "$pid" ]; then
 	kill "$pid"
-	echo "Process id $pid terminated"
 fi
