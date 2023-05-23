@@ -3,7 +3,7 @@
 
 pid=$(ps -ef | grep "4-to_infinity_and_beyond" | grep -v grep | awk '{print $2}')
 
-if [ -z "$pid ]; then
+if -z "$pid"; then
 	echo "Process not running"
 else
 	kill "$pid"
