@@ -15,7 +15,7 @@ termX=$(rm -f; pkill -SIGKILL "/var/run/myscript.pid")
 	echo "Infinity and beyond"
 	trap "echo 'I hate the kill command'" SIGTERM
 	trap "echo 'Y U no love me?!'" SIGINT
-	if SIGQUIT || SIGTERM then
+	if "SIGQUIT || SIGTERM"; then
 		"$termX"
 	fi
 done
