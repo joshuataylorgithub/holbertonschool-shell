@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo current_owner=$(stat -c %U hello) | grep guillame | chown vincent hello
+sudo ls -l hello | grep -w "guillame" && chown vincent hello
