@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown --from=guillame: vincent hello
+sudo current_owner=$(stat -c %U hello) | grep guillame | chown vincent hello
