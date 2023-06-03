@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown --from=guilliame vincent hello>
+file_owner=$(stat -c %U hello); if [ "$file_owner" = "Guillame" ]; then chown vincent hello; fi
