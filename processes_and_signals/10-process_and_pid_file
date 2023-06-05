@@ -11,7 +11,7 @@
 {
 	echo "I hate the kill command";
 }
-	function handle_sigtint()
+	function handle_sigint()
 {
 	echo "Y U no love me?!";
 }
