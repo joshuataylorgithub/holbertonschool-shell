@@ -9,15 +9,15 @@
 
 	function handle_sigterm()
 {
-	echo "I hate the kill command";
+	echo "I hate the kill command"
 }
 	function handle_sigint()
 {
-	echo "Y U no love me?!";
+	echo "Y U no love me?!"
 }
 	function handle_sigquit()
 {
-	echo "Deleting PID file and terminating script";
+	echo "Deleting PID file and terminating script"
 	rm -f /var/run/myscript.pid
 	exit
 }
